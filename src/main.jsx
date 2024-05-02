@@ -9,6 +9,11 @@ const colors = {
     800: "#153e75",
     700: "#2a69ac",
   },
+  background: {
+    50: "#e7f0fd", // Light blue background
+    100: "#c7d9f8", // Slightly darker shade
+    200: "#a6c1f3" // Even darker shade
+  }
 };
 
 const theme = extendTheme({ colors });
