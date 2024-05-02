@@ -4,9 +4,9 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 const Index = () => {
   return (
     <Box>
-      <Flex as="header" justifyContent="space-between" alignItems="center" p={4} bg="gray.100">
+      <Flex as="header" justifyContent="space-between" alignItems="center" p={4} bg="gray.100" wrap="wrap">
         <Heading size="lg">GPT Engineer</Heading>
-        <VStack as="nav" spacing={4} align="stretch">
+        <VStack as="nav" spacing={4} align="stretch" direction={['column', 'row']}>
           <Link href="#about" p={2}>About</Link>
           <Link href="#projects" p={2}>Projects</Link>
           <Link href="#contact" p={2}>Contact</Link>
