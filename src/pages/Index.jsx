@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text, VStack, Link, IconButton } from '@chakra-ui/react';
+import { Box, Flex, Heading, Text, HStack, Link, IconButton } from '@chakra-ui/react';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const Index = () => {
@@ -6,11 +6,11 @@ const Index = () => {
     <Box>
       <Flex as="header" justifyContent="space-between" alignItems="center" p={4} bg="gray.100" wrap="wrap">
         <Heading size="lg">GPT Engineer</Heading>
-        <VStack as="nav" spacing={4} align="stretch" direction={['column', 'row']}>
+        <HStack as="nav" spacing={4} align="stretch" direction="row">
           <Link href="#about" p={2}>About</Link>
           <Link href="#projects" p={2}>Projects</Link>
           <Link href="#contact" p={2}>Contact</Link>
-        </VStack>
+        </HStack>
       </Flex>
       <Flex direction="column" align="center" justify="center" minHeight="100vh" p={10} bg="gray.50">
         <Heading mb={4}>Welcome to GPT Engineer</Heading>
